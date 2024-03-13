@@ -2639,9 +2639,10 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     09. Project Count Css
 ----------------------------------*/
 .car {
+  width: 650px;
   position: relative;
   top: -290px;
-  left: 600px;
+  left: 650px
 }
 
 .car img {
@@ -4026,8 +4027,8 @@ iframe{
 
 .footer-info p {
   color: #ffffff;
-  font-size: 14px;
-  margin-top: 25px;
+  font-size: 16px;
+  margin-top: 29px;
 }
 
 .footer-info .footer-list li {
@@ -4253,35 +4254,90 @@ iframe{
 
 
 
+ .card {
+  display: flex;
+  align-items: center;
+  direction: column;
+  margin-left: 10px;
+  /* gap: 20px  ; */
+}
+
+.para {
+  font-size: 20px;
+}
+
+.title {
+  font-size: 10px;
+}
 
 
+.card {
+  box-sizing: border-box;
+  width: 540px;
+  height: 277px;
+  background: rgba(253, 251, 251, 0.932);
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+  margin-top: 14px;
 
+}
 
+.containerflex {
+ 
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin: 10px;
+  padding-bottom: 10px;
+}
 
+.card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
 
+.card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+.head{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.parag{
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+}
+.h{
+  align-items: center;
+  text-align: center;
+  font-size: 45px;
+}
+.para1{
+  align-items: center;
+  text-align: center;
+  font-size: 1px;
+}
+.parag {
+  align-items: center;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 500;
+  color: #000;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.Text{
+  font-size: 17px;
+}
