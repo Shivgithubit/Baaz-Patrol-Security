@@ -1159,22 +1159,22 @@ textarea:-ms-input-placeholder {
 ------------------------------------------*/
 /*---- Breadcrumb One ----*/
 .breadcrumb-area {
-  background: url(/assets/images/about1.jpg);
+  background: url(/assets/images/banner/bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-align: center;
-  height: 500px;
+  height: 400px;
   width: 100%;
-  opacity: 0.97;
+  opacity: 0.67;
   background-color: #000; 
   /* bfilter: blur(2px);  */
   /* -webkit-filter: blur(2px);  */ 
 }
 .breadcrumb-area h2{
   margin-top: 150px;
-  color: #000;
-  font-weight: 600;
+  color: #fff;
+  font-weight: 700;
   font-size: 50px;
 }
 /* .opaci{
@@ -2142,7 +2142,6 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   border-radius: 32px;
 }
 .repair-image.pt--30 img:hover{
-  height: 320px;
   box-shadow: 6px 6px 5px 4px rgba(16, 13, 13, 0.2);
 }
 
@@ -2591,7 +2590,7 @@ only screen and (max-width: 767px) {
 }
 
 .repair-service-inner p {
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 40px;
 }
 
@@ -2849,9 +2848,9 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .single-faq .title-content h4 {
   font-size: 18px;
-  font-weight: 600;
   margin-top: 15px;
   letter-spacing: 1px;
+  font-weight: bold !important;
 }
 
 /* .single-faq .title-content i {
@@ -3555,14 +3554,16 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .our1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 45px;
   font-family: sans-serif !important;
-  margin-top:-50px;
+  margin-top:-30px;
   font-weight: 600;
   color: #000;
 }
 .para{
   margin:0 40px ;
+  margin-top: 30px;
+  font-size: 17px;
 }
 
 .project-count-inner bg-grey section-pb section-pt-80{
@@ -3737,7 +3738,13 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     height: 600px;
   }
 }
-
+.head{
+  margin-top: 40px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 600;
+}
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   #map {
     height: 600px;
@@ -3756,9 +3763,11 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   }
 }
 iframe{
-  padding-left: 100px;
-  margin-left: 100px;
   margin-top: 20px;
+  padding-left: 130px;
+  padding-right: 130px;
+  
+    
 }
 
 .box-contact {
@@ -3780,9 +3789,39 @@ iframe{
 .contact-us-area {
   margin-top: 20px;
   padding: 110px 0;
-  background: #fff;
+  background: url(/assets/images/banner/bg1.jpg);
   margin-left: 140px;
+
 }
+.contact-us-area::before{
+  background: rgba(0, 0, 0, 0.5);
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* .col-lg-5{
+  background-color: #fff;
+} */
+
+/* .col-lg-6{
+  background-color: #fff;
+  animation-name: slider-2;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 1s;
+  animation-direction: reverse;
+} */
+
+/* @keyframes slider-2 {
+  from {right:0;}
+  to {left:30%;}
+} */
+
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .contact-us-area {
@@ -3811,7 +3850,9 @@ iframe{
 .contact-form-area h3 {
   font-size: 42px;
   font-weight: 600;
-  margin-bottom: 55px;
+  margin-bottom: 20px;
+  color: #fff;
+  
 }
 
 @media only screen and (max-width: 767px) {
@@ -3823,13 +3864,14 @@ iframe{
 
 .contact-form-warp .input-box {
   margin-bottom: 30px;
+  color: #000;
 }
 
 .contact-form-warp .input-box input,
 .contact-form-warp .input-box textarea {
   width: 100%;
   padding: 15px;
-  color: #555;
+  color: white;
   border: 1px solid #ddd;
 }
 
@@ -3839,6 +3881,7 @@ iframe{
 
 .contact-info-wrap .single-contact-info {
   margin-bottom: 60px;
+  color: #f4bd3e;
 }
 
 .contact-info-wrap .single-contact-info:last-child {
@@ -3849,11 +3892,13 @@ iframe{
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 15px;
+  color: #fff;
 }
 
 @media only screen and (max-width: 767px) {
   .contact-info-wrap .single-contact-info h3 {
     margin-bottom: 10px;
+    
   }
 }
 
