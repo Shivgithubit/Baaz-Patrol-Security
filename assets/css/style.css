@@ -1014,7 +1014,7 @@ textarea:-ms-input-placeholder {
 
 .primary-btn:hover {
   border: 1px solid #fb7832;
-  background: #00408e;
+  background: #f4bd3e;
   color: #ffffff;
 }
 
@@ -2138,6 +2138,8 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 .repair-image.pt--30 img {
   height: 300px; 
   width: 500px;
+  margin-top: -111px;
+  border-radius: 32px;
 }
 .repair-image.pt--30 img:hover{
   height: 320px;
@@ -2877,7 +2879,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     11. Something New Css
 ------------------------------*/
 .something-new-bg {
-  background: url(../images/bg/02.jpg);
+  background: url(/image/portrait-male-security-guard-with-radio-station.jpg);
   background-size: cover;
 }
 
@@ -3380,6 +3382,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   color: #ffffff;
   border: 1px solid #f4bd3e;
 }
+
 
 /*-- 
     13. Your Opinion Css
@@ -4298,7 +4301,7 @@ iframe{
   display: flex;
   justify-content: center;
   gap: 60px;
-  margin: 10px;
+  margin: 25px;
   padding-bottom: 10px;
 }
 
