@@ -65,12 +65,12 @@ body {
 body {
   background-color: #fff;
   line-height: 26px;
-  font-size: 16px;
+  font-size: 19px;
   font-style: normal;
   font-weight: normal;
   visibility: visible;
   font-family: "Open Sans", sans-serif;
-  color: #555;
+  color: #0e0d0d;
   /* font-family: 'Poppins', sans-serif; */
 }
 
@@ -80,7 +80,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333;
+  color: #000000;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   margin-top: 0;
@@ -91,15 +91,20 @@ h1 {
   line-height: 1;
   font-weight: 700;
 }
+.h_01{
+  font-size: 37px;
+}
 
 h2 {
-  font-size: 30px;
+  font-size: 28px;
   line-height: 36px;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 25px;
   line-height: 30px;
+  font-weight: 600;
 }
 
 h4 {
@@ -1108,7 +1113,7 @@ textarea:-ms-input-placeholder {
 }
 
 .section-title h2 {
-  font-size: 48px;
+  font-size: 40px;
   text-transform: capitalize;
   font-weight: 600;
 }
@@ -1176,7 +1181,7 @@ textarea:-ms-input-placeholder {
 ------------------------------------------*/
 /*---- Breadcrumb One ----*/
 .breadcrumb-area {
-  background: url(/assets/images/banner/bg.jpg);
+  background: url(/assets/images/banner/Screenshot\ 2024-03-15\ 105048.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1191,9 +1196,11 @@ textarea:-ms-input-placeholder {
 
 .breadcrumb-area h2 {
   margin-top: 150px;
-  color: #fff;
+  color: white;
   font-weight: 700;
   font-size: 50px;
+  line-height: normal;
+  padding-top: 10px;
 }
 
 /* .opaci{
@@ -1216,6 +1223,18 @@ textarea:-ms-input-placeholder {
   color: black;
   opacity: 0.9;
 } */
+
+
+.logo_fo{
+  max-width: 55%;
+}
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .breadcrumb-area h2 {
@@ -2023,7 +2042,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .service-content h3 {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -2894,7 +2913,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 } */
 
 .single-faq p {
-  font-size: 14px;
+  font-size: 17px;
   margin-top: 10px;
 }
 
@@ -3479,7 +3498,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .opinion-content-inner .submit-box {
   margin-top: 10px;
-  margin-left: -650px;
+  /* margin-left: -650px; */
 }
 
 /*--
@@ -3583,7 +3602,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .our1 {
   text-align: center;
-  font-size: 45px;
+  font-size: 40px;
   font-family: sans-serif !important;
   margin-top: -30px;
   font-weight: 600;
@@ -3809,7 +3828,7 @@ iframe {
   max-width: 1410px;
   width: 100%;
   z-index: 9;
-  margin: ;
+  /* margin: ; */
   position: relative;
 }
 
@@ -4446,6 +4465,21 @@ iframe {
 }
 
 
+/* @media (min-width: 1200px) {
+  .container {
+      max-width: 1800px;
+      width: 1620px;;
+  }
+} */
+
+.parent{
+  margin-top: 26px;
+  color: white;
+}
+.header-bottom-area{
+  padding: 20px;
+
+}
 
 
 
