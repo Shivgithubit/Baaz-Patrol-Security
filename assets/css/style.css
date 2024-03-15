@@ -82,7 +82,7 @@ h5,
 h6 {
   color: #000000;
   font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   margin-top: 0;
 }
 
@@ -121,7 +121,6 @@ h6 {
   font-size: 12px;
   line-height: 14px;
 }
-
 p:last-child {
   margin-bottom: 0;
 }
@@ -357,7 +356,7 @@ textarea:-ms-input-placeholder {
     - Section Padding
 -------------------------------------*/
 .section-ptb {
-  padding: 40px 0;
+  padding: 40px 20px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -1001,6 +1000,7 @@ textarea:-ms-input-placeholder {
   background: #f4bd3e;
   font-size: 16px;
   font-weight: 600;
+  border-radius: 10px;
 }
 
 .default-btn:hover {
@@ -1019,13 +1019,13 @@ textarea:-ms-input-placeholder {
 }
 
 .primary-btn:hover {
-  border: 1px solid #fb7832;
+  border: 1px solid #f4bd3e;
   background: #f4bd3e;
   color: #ffffff;
 }
 
 .border-radius {
-  border-radius: 25px;
+  border-radius: 1.25rem;
 }
 
 .btn {
@@ -1251,14 +1251,14 @@ textarea:-ms-input-placeholder {
 .breadcrumb-list .breadcrumb-item {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  color: white;
+  color: #000;
   text-transform: capitalize;
   line-height: 1;
   display: inline-block;
 }
 
 .breadcrumb-list .breadcrumb-item.active {
-  color: white;
+  color: #000;
 }
 
 .breadcrumb-list .breadcrumb-item a:hover {
@@ -1266,7 +1266,7 @@ textarea:-ms-input-placeholder {
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
-  color: white;
+  color: #000;
   content: "/";
   display: inline-block;
   padding-left: 0.5rem;
@@ -2168,7 +2168,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .para {
-  font-size: 18px;
+  font-size: 17px !important;
 }
 
 .repair-make-area {
@@ -2176,10 +2176,13 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .repair-image.pt--30 img {
-  height: 300px;
-  width: 500px;
+
   margin-top: -111px;
   border-radius: 32px;
+  height: 300px; 
+  width: 400px;
+  margin-left: 50px;
+
 }
 
 .repair-image.pt--30 img:hover {
@@ -2633,7 +2636,9 @@ only screen and (max-width: 767px) {
 
 .repair-service-inner p {
   font-size: 17px;
-  margin-bottom: 40px;
+  text-align: justify;
+  font-family: "Open Sans", sans-serif !important;
+  margin-left: 40px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -3609,8 +3614,9 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   color: #000;
 }
 
-.para {
-  margin: 0 40px;
+.para{
+  margin:0 43px ;
+
   margin-top: 30px;
   font-size: 17px;
 }
@@ -3830,6 +3836,7 @@ iframe {
   z-index: 9;
   /* margin: ; */
   position: relative;
+  
 }
 
 @media only screen and (max-width: 479px) {
@@ -3840,9 +3847,12 @@ iframe {
 
 .contact-us-area {
   margin-top: 20px;
-  padding: 110px 0;
+  padding: 60px 0;
   background: url(/assets/images/banner/bg1.jpg);
-  margin-left: 140px;
+  margin-left: 50px;
+  width: 100%;
+  background-size: cover;
+  /* background-attachment: fixed; */
 
 }
 
@@ -3903,7 +3913,7 @@ iframe {
 .contact-form-area h3 {
   font-size: 42px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #fff;
 
 }
@@ -3926,6 +3936,7 @@ iframe {
   padding: 15px;
   color: white;
   border: 1px solid #ddd;
+  border-radius: 10px;
 }
 
 .contact-form-warp .input-box textarea {
@@ -3933,8 +3944,8 @@ iframe {
 }
 
 .contact-info-wrap .single-contact-info {
-  margin-bottom: 60px;
-  color: #f4bd3e;
+  margin-bottom: 30px;
+  color: #fff;
 }
 
 .contact-info-wrap .single-contact-info:last-child {
@@ -3947,6 +3958,13 @@ iframe {
   margin-bottom: 15px;
   color: #fff;
 }
+
+.single-contact-info i{
+  color: #f4bd3e;
+  font-size: 25px;
+
+}
+
 
 @media only screen and (max-width: 767px) {
   .contact-info-wrap .single-contact-info h3 {
