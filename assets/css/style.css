@@ -210,7 +210,7 @@ ul {
 
 @media only screen and (max-width: 479px) {
   .container {
-    width: 320px;
+    width: 360px;
   }
 }
 
@@ -1185,7 +1185,7 @@ textarea:-ms-input-placeholder {
 ------------------------------------------*/
 /*---- Breadcrumb One ----*/
 .breadcrumb-area {
-  background: url(/assets/images/banner/Screenshot\ 2024-03-15\ 105048.png);
+  background: url(/assets/images/banner/about.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1233,11 +1233,6 @@ textarea:-ms-input-placeholder {
 
 
 
-
-
-
-
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .breadcrumb-area h2 {
     font-size: 24px;
@@ -1266,7 +1261,9 @@ textarea:-ms-input-placeholder {
 .breadcrumb-list .breadcrumb-item a:hover {
   color: #fb7832;
 }
-
+.breadcrumb-item a{
+  color: #000;
+}
 .breadcrumb-item+.breadcrumb-item::before {
   color: #000;
   content: "/";
@@ -1274,6 +1271,7 @@ textarea:-ms-input-placeholder {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+
 
 /*--
     - Paginatoin Css
@@ -2179,10 +2177,10 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .repair-image.pt--30 img {
   border-radius: 32px;
-  height: 300px; 
+  height: 280px; 
   width: 400px;
-  margin-left: 50px;
-
+  margin-right: 60px;
+  margin-top: -10px;
 }
 
 .repair-image.pt--30 img:hover {
@@ -2637,7 +2635,7 @@ only screen and (max-width: 767px) {
 .repair-service-inner p {
   font-size: 17px;
   margin-bottom: 40px;
-  margin-left: 43px;
+  margin-left: 80px;
   text-align: justify;
 }
  
@@ -2922,7 +2920,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 } */
 
 .single-faq p {
-  font-size: 17px;
+  font-size: 14px;
   margin-top: 10px;
   text-align: justify;
 }
@@ -3620,7 +3618,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .para{
-  margin:0 43px ;
+  margin:0 70px ;
   margin-top: 30px;
   font-size: 17px;
   text-align: justify;
@@ -3827,8 +3825,8 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 iframe {
   margin-top: 20px;
-  padding-left: 130px;
-  padding-right: 130px;
+  /* padding-left: 130px;
+  padding-right: 130px; */
 
 
 }
@@ -3836,7 +3834,6 @@ iframe {
 .box-contact {
   border: 1px solid #ddd;
   background: #fff;
-  max-width: 1410px;
   width: 100%;
   z-index: 9;
   /* margin: ; */
@@ -3854,7 +3851,6 @@ iframe {
   margin-top: 20px;
   padding: 60px 0;
   background: url(/assets/images/banner/bg1.jpg);
-  margin-left: 50px;
   width: 100%;
   background-size: cover;
   /* background-attachment: fixed; */
@@ -4486,7 +4482,7 @@ iframe {
 .Text {
   font-size: 17px;
 }
-/* tanu css */
+/*  css */
 button.default-btn.border-radius.newbutton {
   margin-left: 18px;
 }
@@ -4561,3 +4557,10 @@ button.default-btn.border-radius.abhibutton {
   margin-left: 10px;
   font-size: 17px;
 }
+.newli{
+  margin-right: 35px;
+}
+.new-section {
+  padding: 40px 50px;
+}
+
