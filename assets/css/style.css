@@ -1,7 +1,6 @@
 /*-----------------------------------------------------------------------------------
 
-    Template Name: Baaz Patrol
-    Template URI: http://devitems.com/preview/fusta.html
+    Template Name: Baaz Patrolservice-image
     Description:  Baaz Patrol
     Author: Hastech
     Author URI: http://devitems.com/
@@ -65,12 +64,12 @@ body {
 body {
   background-color: #fff;
   line-height: 26px;
-  font-size: 16px;
+  font-size: 19px;
   font-style: normal;
   font-weight: normal;
   visibility: visible;
   font-family: "Open Sans", sans-serif;
-  color: #555;
+  color: #0e0d0d;
   /* font-family: 'Poppins', sans-serif; */
 }
 
@@ -91,15 +90,20 @@ h1 {
   line-height: 1;
   font-weight: 700;
 }
+.h_01{
+  font-size: 37px;
+}
 
 h2 {
-  font-size: 30px;
+  font-size: 28px;
   line-height: 36px;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 25px;
   line-height: 30px;
+  font-weight: 600;
 }
 
 h4 {
@@ -165,7 +169,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+.img1{
+  max-width: 175%;
+  height: auto;
+  border-radius: 20px;
 
+}
 .single-service:hover {
   box-shadow: 12px 12px 2px 1px rgba(163, 163, 185, 0.2);
   ;
@@ -195,7 +204,7 @@ ul {
 
 @media only screen and (max-width: 767px) {
   .container {
-    width: 450px;
+    width: 40px;
   }
 }
 
@@ -1108,7 +1117,7 @@ textarea:-ms-input-placeholder {
 }
 
 .section-title h2 {
-  font-size: 48px;
+  font-size: 40px;
   text-transform: capitalize;
   font-weight: 600;
 }
@@ -1176,7 +1185,7 @@ textarea:-ms-input-placeholder {
 ------------------------------------------*/
 /*---- Breadcrumb One ----*/
 .breadcrumb-area {
-  background: url(/assets/images/banner/about.jpg);
+  background: url(/assets/images/banner/Screenshot\ 2024-03-15\ 105048.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1185,7 +1194,6 @@ textarea:-ms-input-placeholder {
   width: 100%;
   opacity: 0.77;
   background-color: #000;
-
   /* bfilter: blur(2px);  */
   /* -webkit-filter: blur(2px);  */
 }
@@ -1217,6 +1225,18 @@ textarea:-ms-input-placeholder {
   color: black;
   opacity: 0.9;
 } */
+
+
+.logo_fo{
+  max-width: 55%;
+}
+
+
+
+
+
+
+
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .breadcrumb-area h2 {
@@ -2024,7 +2044,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .service-content h3 {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -2338,7 +2358,10 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   color: #fb7832;
   margin-right: 10px;
 }
-
+/* .service-details-image img{
+ width: 500px;
+  height: 500px;
+} */
 /*--
    07. About Area Css
 ------------------------------*/
@@ -2705,7 +2728,10 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   background: url(/image/ben-o-bro-wpU4veNGnHg-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  /* background-position: center; */
+  background-attachment: fixed;
   background-position: center;
+
   /* position: fixed; */
 
 }
@@ -2896,7 +2922,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 } */
 
 .single-faq p {
-  font-size: 14px;
+  font-size: 17px;
   margin-top: 10px;
   text-align: justify;
 }
@@ -3586,7 +3612,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .our1 {
   text-align: center;
-  font-size: 45px;
+  font-size: 40px;
   font-family: sans-serif !important;
   margin-top: -30px;
   font-weight: 600;
@@ -3813,7 +3839,7 @@ iframe {
   max-width: 1410px;
   width: 100%;
   z-index: 9;
-  margin: ;
+  /* margin: ; */
   position: relative;
   
 }
@@ -4460,8 +4486,6 @@ iframe {
 .Text {
   font-size: 17px;
 }
-
-
 /* tanu css */
 button.default-btn.border-radius.newbutton {
   margin-left: 18px;
@@ -4507,9 +4531,33 @@ button.default-btn.border-radius.newbutton {
   border: 1px solid #f4bd3e;
 }
 
+/* @media (min-width: 1200px) {
+  .container {
+      max-width: 1800px;
+      width: 1620px;;
+  }
+} */
+
+.parent{
+  margin-top: 25px;
+  color: white;
+}
+.header-bottom-area{
+  padding: 20px;
+
+}
 
 
+button.default-btn.border-radius.abhibutton {
+  margin-left: 18px;
+}
 
 
-
-
+.c.A:hover{
+  color: #E7B43D;
+}
+.c.A {
+  color: white;
+  margin-left: 10px;
+  font-size: 17px;
+}
