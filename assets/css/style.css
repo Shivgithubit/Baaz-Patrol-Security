@@ -171,7 +171,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+.img1{
+  max-width: 175%;
+  height: auto;
+  border-radius: 20px;
 
+}
 .single-service:hover {
   box-shadow: 12px 12px 2px 1px rgba(163, 163, 185, 0.2);
   ;
@@ -201,7 +206,7 @@ ul {
 
 @media only screen and (max-width: 767px) {
   .container {
-    width: 450px;
+    width: 40px;
   }
 }
 
@@ -1195,12 +1200,12 @@ textarea:-ms-input-placeholder {
 }
 
 .breadcrumb-area h2 {
-  margin-top: 150px;
-  color: white;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: normal;
-  padding-top: 10px;
+  margin-top: 3px;
+    color: white;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: normal;
+    padding-top: 4px;
 }
 
 /* .opaci{
@@ -2355,7 +2360,10 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   color: #fb7832;
   margin-right: 10px;
 }
-
+/* .service-details-image img{
+ width: 500px;
+  height: 500px;
+} */
 /*--
    07. About Area Css
 ------------------------------*/
@@ -2722,7 +2730,10 @@ only screen and (min-width: 768px) and (max-width: 991px) {
   background: url(/image/ben-o-bro-wpU4veNGnHg-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  /* background-position: center; */
+  background-attachment: fixed;
   background-position: center;
+
   /* position: fixed; */
 
 }
@@ -4473,7 +4484,7 @@ iframe {
 } */
 
 .parent{
-  margin-top: 26px;
+  margin-top: 25px;
   color: white;
 }
 .header-bottom-area{
@@ -4482,4 +4493,16 @@ iframe {
 }
 
 
+button.default-btn.border-radius.abhibutton {
+  margin-left: 18px;
+}
 
+
+.c.A:hover{
+  color: #E7B43D;
+}
+.c.A {
+  color: white;
+  margin-left: 10px;
+  font-size: 17px;
+}
