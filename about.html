@@ -32,15 +32,59 @@
     <!-- Modernizer JS -->
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <style>
-         .parent{
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1200px;
+            width: 1620px;;
+        }
+    }
+    .parent{
         margin-top: 26px;
         color: white;
     }
     .header-bottom-area{
     padding: 20px;
 
+} 
+.newbox{
+    margin-left: 200px;
 }
-
+.container h1 {
+  font-size: 45px;
+  padding-top: 31px;
+  text-align: center;
+  font-family: sans-serif !important;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px),
+only screen and (max-width: 767px) {
+    .repair-service-inner p {
+        margin-top: -25px;
+        font-size: 17px;
+        margin-left: 0px;
+        margin-right: 0px;
+        text-align: justify;
+}
+  .repair-image.pt--30 {
+    padding-top: 60px;
+  }
+    .repair-image.pt--30 {
+    padding-top: 40px;
+    text-align: center;
+    margin-left: -50px;
+    width: 100%;
+}
+.container h2{
+    margin-top: 20px;
+    line-height: 45px;
+}
+.para{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.newbox{
+    margin-left: 0px;
+}
+}
     </style>
 </head>
 
@@ -50,7 +94,6 @@
     <div class="main-wrapper">
 
         <!-- header-area start -->
-        
         <div class="header-bottom-area header-sticky">
             <div class="container">
                 <div class="row">
@@ -81,12 +124,12 @@
                             <div class="row parent">
                                 <div class="info-content">
                                     <i style="font-size:25px" class="bi bi-telephone-fill"> </i> <a
-                                        href="tel:+1 (951) 889-8700"> <i class="bi bi-telephone"></i>+1
+                                        href="tel:+1 (951) 889-8700"> <i class="fa-solid fa-phone"></i> +1
                                         (951) 889-8700</a>
 
                                     <i class="bi bi-envelope-fill" style="margin-left: 20px;"> </i><a
-                                        href="mailto:example@email.com"><i class="bi bi-envelope"></i>
-                                        info@baazpatrol.com</a>
+                                        href="mailto:example@email.com"><i class="fa-solid fa-envelope"></i>
+                                         info@baazpatrol.com</a>
                                 </div>
 
                                 <!-- <div class="link-item " style="color:white">
@@ -121,6 +164,8 @@
         <!-- header-bottom-area End -->
 
     </div>
+        
+
     <!-- header-area end -->
      <!-- breadcrumb-area start -->
      <div class="breadcrumb-area section-ptb">
@@ -131,7 +176,7 @@
                     <!-- breadcrumb-list start -->
                     <ul class="breadcrumb-list">
                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item active">Service</li>
+                        <li class="breadcrumb-item active">About</li>
                     </ul>
                     <!-- breadcrumb-list end -->
                 </div>
@@ -190,7 +235,7 @@
                         </div>
                         <p>Bazz Security pioneers cutting-edge tech, delivering unparalleled solutions for
                             advanced security needs. Innovation, reliability, and excellence define our
-                            approach. AIIDL TECH</p>
+                            approach.</p>
                     </div>
                     <!-- single-faq Start -->
                 </div>
@@ -202,8 +247,8 @@
                             <h4>24/7
                                 Support</h4>
                         </div>
-                        <p>Bazz Security offers 24/7 support, ensuring your safety around the clock. Trust
-                            us for reliable protection and assistance whenever you need it.</p>
+                        <p> Count on Bazz Security for 24/7 support, ensuring your safety day and night. Trust us for
+                            reliable protection and assistance whenever you need it. Your security is our priority.</p>
                     </div>
                     <!-- single-faq Start -->
                 </div>
@@ -220,7 +265,7 @@
                     </div>
                     <!-- single-faq Start -->
                 </div>
-                <div class="col-lg-4 col-md-6" style="margin-left: 200px;">
+                <div class="col-lg-4 col-md-6 newbox">
                     <!-- single-faq Start -->
                     <div class="single-faq text-center">
                         <div class="title-content">
@@ -295,7 +340,7 @@
                             </div>
                             <!-- <div class="col-lg-12"> -->
                                 <div class="submit-box text-center">
-                                    <button class="default-btn border-radius" type="submit">Submit</button>
+                                    <button class="default-btn border-radius newbutton" type="submit">Submit</button>
                                 </div>
                             <!-- </div> -->
                         </div>

@@ -1181,9 +1181,9 @@ textarea:-ms-input-placeholder {
   background-position: center;
   background-size: cover;
   text-align: center;
-  height: 400px;
+  height: 320px;
   width: 100%;
-  opacity: 0.67;
+  opacity: 0.77;
   background-color: #000;
 
   /* bfilter: blur(2px);  */
@@ -1191,8 +1191,8 @@ textarea:-ms-input-placeholder {
 }
 
 .breadcrumb-area h2 {
-  margin-top: 150px;
-  color: #000;
+  margin-top: 100px;
+  color: #000000;
   font-weight: 700;
   font-size: 50px;
 }
@@ -2158,8 +2158,6 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .repair-image.pt--30 img {
-
-  margin-top: -111px;
   border-radius: 32px;
   height: 300px; 
   width: 400px;
@@ -2603,9 +2601,6 @@ only screen and (max-width: 767px) {
   padding-top: 1px;
   text-align: center;
   font-family: sans-serif !important;
-
-
-
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
@@ -2618,10 +2613,11 @@ only screen and (max-width: 767px) {
 
 .repair-service-inner p {
   font-size: 17px;
+  margin-bottom: 40px;
+  margin-left: 43px;
   text-align: justify;
-  font-family: "Open Sans", sans-serif !important;
-  margin-left: 40px;
 }
+ 
 
 @media only screen and (min-width: 768px) and (max-width: 991px),
 only screen and (max-width: 767px) {
@@ -2902,6 +2898,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 .single-faq p {
   font-size: 14px;
   margin-top: 10px;
+  text-align: justify;
 }
 
 .single-faq:hover {
@@ -3485,7 +3482,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .opinion-content-inner .submit-box {
   margin-top: 10px;
-  margin-left: -650px;
+  /* margin-left: -650px; */
 }
 
 /*--
@@ -3598,9 +3595,9 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 
 .para{
   margin:0 43px ;
-
   margin-top: 30px;
   font-size: 17px;
+  text-align: justify;
 }
 
 .project-count-inner bg-grey section-pb section-pt-80 {
@@ -4463,6 +4460,54 @@ iframe {
 .Text {
   font-size: 17px;
 }
+
+
+/* tanu css */
+button.default-btn.border-radius.newbutton {
+  margin-left: 18px;
+}
+
+.breadcrumb-list .breadcrumb-item.active {
+  color: #ffb600;
+}
+.single-contact-info .head1{
+  font-size: 42px !important;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #fff;
+  line-height: 48px;
+}
+.single-contact-info .para1{
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: justify;
+  line-height:32px;
+}
+.icon .social li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.icon .social {
+  margin-top: 20px;
+}
+.icon .social li a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #f4bd3e;
+  border-radius: 50%;
+  color: #f4bd3e;
+  text-align: center;
+  /* background-color: #f4bd3e; */
+}
+.icon .social li a:hover {
+  background: #f4bd3e;
+  color: #1d1e26;
+  border: 1px solid #f4bd3e;
+}
+
+
 
 
 
