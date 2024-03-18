@@ -55,10 +55,8 @@
 *::before {
   box-sizing: border-box;
 }
-
-html,
-body {
-  height: 100%;
+html{
+  width: 183%;
 }
 
 body {
@@ -71,6 +69,8 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #0e0d0d;
   /* font-family: 'Poppins', sans-serif; */
+  width: 100vw;
+  height: auto;
 }
 
 h1,
@@ -1802,6 +1802,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 .main-wrapper {
   background-color: white;
   /* height: 30px; */
+  width: 100%;
 }
 
 .info-content a {
@@ -2688,11 +2689,13 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 .car {
   width: 650px;
   position: relative;
-  top: -290px;
-  left: 650px
+  top: -269px;
+  left: 607px;
 }
 
 .car img {
+  position: relative;
+  left: -21%;
   height: 500px;
   width: auto;
   animation-name: car;
@@ -2710,6 +2713,7 @@ only screen and (min-width: 768px) and (max-width: 991px) {
     margin-bottom: 300px
   }
 }
+/* ====================================================================Responsive Home Page==================================== */
 
 
 
@@ -2721,16 +2725,16 @@ only screen and (min-width: 768px) and (max-width: 991px) {
 }
 
 .banner {
-  /* background-color: yellow; */
+  
   height: 500px;
   background: url(/image/ben-o-bro-wpU4veNGnHg-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
+  
   background-attachment: fixed;
   background-position: center;
 
-  /* position: fixed; */
+
 
 }
 
