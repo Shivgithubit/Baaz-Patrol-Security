@@ -565,6 +565,57 @@ textarea:-ms-input-placeholder {
   .section-pb-100 {
     padding-bottom: 40px;
   }
+
+  .repair-service-inner h2 {
+    font-size: 27px;
+    margin: 0% 0% 0% 18%;
+  }
+
+  .repair-service-inner p {
+    font-size: 14px;
+    text-align: justify;
+    padding: 0% 0% 0% 19%;
+  }
+
+  .repair-service-inner .make-apoinment-button {
+    margin: 0% 0% 0% 16%;
+  }
+
+  .repair-image.pt--30 {
+    padding: 15% 0% 0% 14%;
+  }
+
+  .single-faq {
+    margin-top: 35px;
+    padding: 6% 6% 6% 19%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: 0% !important;
+  }
+
+  .container h1 {
+    font-size: 37px !important;
+    padding-top: 1px;
+    text-align: center;
+    font-family: sans-serif !important;
+  }
+
+  .Text {
+    font-size: 15px !important;
+  }
+
+  .slick-current>.mt--30 {
+    margin: 0% 0% 0% 0%;
+  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -595,7 +646,7 @@ textarea:-ms-input-placeholder {
 }
 
 .mt--30 {
-  margin-top: 30px;
+  margin: 0% 0% 0% 17%;
 }
 
 .mt--35 {
