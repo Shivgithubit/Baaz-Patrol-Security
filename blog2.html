@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Blog 2</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/image/logo1.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script defer src="fun.js"></script>
+
+
+    <!-- CSS 
+  ========================= -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Fonts CSS -->
+    <link rel="stylesheet" href="assets/css/icofont.min.css">
+    <link rel="stylesheet" href="assets/css/Pe-icon-7-stroke.css">
+
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/css/plugins.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Modernizer JS -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="https://kit.fontawesome.com/4cbca90a22.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4cbca90a22.js" crossorigin="anonymous"></script>
+
+    <style>
+        .navbar-nav {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            color: azure;
+
+        }
+
+        .list {
+            display: flex;
+            gap: 8%;
+            width: 40%;
+        }
+
+        .cont-info>a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .cont-info>a:hover {
+            color: #f4bd3e;
+
+        }
+
+        .nav-link:hover {
+            color: #f4bd3e;
+        }
+
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link.show {
+            color: #f4bd3e;
+        }
+
+        .logo {
+            margin-left: 6%;
+        }
+
+        .navbar-nav>.list>.nav-item>a:hover {
+            color: #f4bd3e !important;
+        }
+
+        .toggle {
+            background-color: antiquewhite;
+        }
+
+        .list1 {
+            margin: 1% -9% 0% 0%;
+        }
+
+        @media screen and (max-width:768px) {
+
+            .list {
+                display: flex;
+                gap: 8%;
+                padding: 1%;
+                flex-direction: column;
+                width: 53%;
+            }
+
+            .navbar-nav>.list>.nav-item>a:hover {
+                color: #f4bd3e !important;
+            }
+
+        }
+
+
+
+
+
+        .blogi {
+            width: 100%;
+            display: flex;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .blog-content {
+            margin-top: 30px;
+            margin-left: 34px;
+            line-height: 2;
+            width: 40%;
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        .search {
+            width: 50px;
+        }
+
+
+
+
+        .card-container {
+            /* background-color: yellow; */
+            width: 60%;
+
+        }
+
+        .card-container>img {
+            width: 100%;
+        }
+
+
+        .cards {
+            width: 365px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+            transition: transform 0.6s;
+            /* border: 5px solid black; */
+            padding: 5px;
+            margin-bottom: 20px;
+        }
+
+        .cards:hover {
+
+            transform: translateY(-20px);
+        }
+
+        .cards img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h1 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .card-button {
+            font-size: 15px;
+            display: inline-block;
+            background-color: #3498db;
+            padding: 8px 16px;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .sideBlog h2 {
+            font-size: 19px;
+            line-height: 30px;
+            font-weight: 588;
+        }
+
+        .sideBlog {
+            margin-bottom: 25px;
+        }
+
+        .sideBlog a p {
+            /* margin-bottom: 25px; */
+            color: blue;
+        }
+
+
+        @media screen and (max-width:768px) {
+            .blogi {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card-container {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .blog-content {
+                width: 100%;
+
+            }
+
+            .sideBlog {
+                padding: 10px;
+            }
+        }
+
+        /* h3 {
+      font-size: 21px;
+      line-height: 30px;
+      font-weight: 600;
+    }
+
+    section>.container>div {
+      width: 111%;
+      text-align: left;
+    } */
+
+        @media only screen and (max-width: 1025px) {
+            .footer-fo {
+                max-width: 75%;
+                margin-left: 10px;
+            }
+
+            .container {
+                max-width: 1260px !important;
+                text-align: left;
+            }
+        }
+
+        @media only screen and (max-width: 2560px) {
+            .container {
+                max-width: 1260px !important;
+
+            }
+
+            .container>.row .mb-4,
+            .my-4 {
+                margin-bottom: 1.5rem !important;
+                text-align: left;
+            }
+
+            .icon .social {
+                margin-top: 20px;
+                margin-left: -1px;
+            }
+
+
+        }
+
+        .newp {
+            margin-left: -4px;
+            width: 293px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .icon .social {
+                margin-left: -13px;
+            }
+
+            p:last-child {
+                margin-bottom: 0;
+                font-size: 17px;
+            }
+
+            .row {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin-right: -40px;
+                margin-left: 29%;
+            }
+        }
+
+        #textarea {
+            height: 150px;
+            width: 500px;
+            border-radius: 10px;
+            resize: none;
+            padding: 10px;
+            overflow: auto;
+            background-color: #f2f2f2;
+        }
+
+        form {
+            padding: 1% 9%;
+        }
+
+        input {
+            height: 53px;
+            margin-bottom: 10px;
+            width: 75%;
+            border-radius: 6px;
+            border: 1px solid rgb(194, 189, 189);
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+
+        form>button {
+            border: none;
+            background-color: orange;
+            height: 50px;
+            border-radius: 12px;
+        }
+
+        h3 {
+            margin: 10px 28px;
+        }
+
+        p {
+            font-family: "Open Sans", sans-serif;
+            margin: 19px 35px;
+        }
+
+        h2 {
+            margin-left: 34px;
+            font-size: 28px;
+            line-height: 36px;
+
+        }
+
+        ol>li {
+            margin: 12px 19px;
+            font-size: 16px;
+            line-height: 2.5;
+        }
+
+        .blog-content>h2 {
+            margin: 34px;
+            font-size: 33px;
+            line-height: 36px;
+            font-weight: 600;
+        }
+
+        hr {
+            width: 177px;
+            border: 2px solid #d9b812;
+            text-align: left;
+            margin-left: 43px;
+        }
+
+        .blog-content>p {
+            font-size: 19px;
+            line-height: 30px;
+            font-weight: 588;
+        }
+
+
+        .form {
+            box-shadow: 0px 0px 6px;
+            margin-bottom: 100px;
+            border-radius: 43px;
+            margin-top: 3rem;
+            padding: 22px;
+        }
+
+        .newf {
+            color: #f4bd3e;
+            margin-left: 30px;
+            font-size: 16px;
+        }
+
+        .breadcrumb-area h2 {
+            margin-top: 97px;
+            color: #000;
+            line-height: 1.5;
+            font-weight: 700;
+            font-size: 27px;
+            width: 75%;
+            margin-left: 19%;
+        }
+
+        .breadcrumb-list {
+            margin-left: 23%;
+        }
+
+        .newd p>a {
+            width: 259px;
+        }
+
+        @media screen and (max-width:426px) {
+
+            .cont-info>a {
+                color: white;
+                text-decoration: none;
+                width: 181px;
+            }
+
+            .breadcrumb-area h2 {
+                margin-top: 7px;
+                color: #000;
+                line-height: 1.5;
+                font-weight: 700;
+                font-size: 13px;
+                width: 75%;
+                margin-left: 8%;
+            }
+
+            p {
+                font-family: "Open Sans", sans-serif;
+                margin: 16px 1px;
+                font-size: 13px;
+            }
+
+            h2 {
+                margin-left: -8px;
+                font-size: 22px;
+                line-height: 25px;
+            }
+
+            ol>li {
+                margin: 12px -20px;
+                font-size: 13px;
+                line-height: 2.5;
+            }
+
+            #textarea {
+                /* height: 150px; */
+                border-radius: 10px;
+                resize: none;
+                padding: 10px;
+                overflow: auto;
+                background-color: #f2f2f2;
+                width: 110%;
+            }
+
+            input {
+                height: 35px;
+                margin-bottom: 10px;
+                width: 110%;
+                border-radius: 6px;
+                border: 1px solid rgb(194, 189, 189);
+                padding: 10px;
+                background-color: #f2f2f2;
+            }
+
+            h3 {
+                font-size: 24px;
+                line-height: 30px;
+                font-weight: 600;
+            }
+
+            .blog-content>h2 {
+                margin: 2%;
+                font-size: 33px;
+                line-height: 36px;
+                font-weight: 600;
+            }
+
+            .blog-content {
+                margin-top: -75px;
+                margin-left: 0px;
+                width: 100%;
+                font-size: -17px;
+            }
+
+            hr {
+                width: 177px;
+                border: 1px solid #d9b812;
+                text-align: left;
+                margin-left: 2px;
+            }
+
+            p:last-child {
+                margin-bottom: 11px;
+                font-size: 15px;
+            }
+
+            h2 {
+                margin-left: 2px;
+                font-size: 19px;
+                line-height: 25px;
+            }
+
+            .row {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin-right: -40px;
+                margin-left: 3%;
+            }
+
+            .newf {
+                color: #f4bd3e;
+                margin-left: 2px;
+                font-size: 16px;
+            }
+
+        }
+
+        @media screen and (min-width:426px) and (max-width:768.9px) {
+
+            .breadcrumb-area h2 {
+                margin-top: 7px;
+                color: #000;
+                line-height: 1.5;
+                font-weight: 700;
+                font-size: 22px;
+                width: 68%;
+                margin-left: 10%;
+            }
+
+            .breadcrumb-list {
+                margin-left: 25%;
+            }
+
+            .blog-content {
+                margin-top: 0px;
+                margin-left: 34px;
+                line-height: 2;
+                width: 107%;
+                font-weight: bold;
+                font-size: 17px;
+            }
+
+            .row {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+                margin-right: -40px;
+                margin-left: 0%;
+            }
+
+            .newp {
+                margin-left: -4px;
+                width: 103%;
+            }
+
+            .newd p>a {
+                width: 259px;
+                font-size: 13px;
+            }
+
+            .newd {
+                margin-left: -7px;
+            }
+
+            input {
+                height: 53px;
+                margin-bottom: 10px;
+                width: 91%;
+                border-radius: 6px;
+                border: 1px solid rgb(194, 189, 189);
+                padding: 10px;
+                background-color: #f2f2f2;
+            }
+
+            .breadcrumb-list {
+                margin-left: 31%;
+            }
+        }
+
+        @media screen and (min-width:769px) and (max-width:1025px) {
+            .breadcrumb-area h2 {
+                margin-top: 7px;
+                color: #000;
+                line-height: 1.5;
+                font-weight: 700;
+                font-size: 22px;
+                width: 50%;
+                margin-left: 19%;
+            }
+
+            .breadcrumb-list {
+                margin-left: 42%;
+            }
+
+            #textarea {
+                height: 150px;
+                width: 93%;
+                border-radius: 10px;
+                resize: none;
+                padding: 10px;
+                overflow: auto;
+                background-color: #f2f2f2;
+            }
+
+            input {
+                height: 53px;
+                margin-bottom: 10px;
+                width: 92%;
+                border-radius: 6px;
+                border: 1px solid rgb(194, 189, 189);
+                padding: 10px;
+                background-color: #f2f2f2;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section style="overflow: hidden;">
+
+        <nav class="navbar navbar-expand-lg bg-dark">
+            <div class="container-fluid">
+                <div class="logo ms-*(2) ">
+                    <a href="index.html"><img src="image/logo1.png" alt="" style="width: 150px;"></a>
+                </div>
+                <button class="toggle navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <div class="list">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="services.html">Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="contact.html">Contact</a>
+                            </li>
+                        </div>
+                        <div class="list list1">
+                            <div class="cont-info"> <a href="tel:+1 (951) 889-8700 ">
+                                    <i class="fa-solid fa-phone"></i> +1
+                                    (951) 889-8700 </a>
+                            </div>
+
+                            <div class="cont-info">
+                                <a href="mailto:example@email.com"><i class="fa-solid fa-envelope"></i>
+                                    info@baazpatrol.com</a>
+                            </div>
+                        </div>
+
+
+                        </li>
+                </div>
+                </ul>
+            </div>
+            </div>
+        </nav>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+
+
+
+        <div class="main">
+            <!-- *nabvar -->
+
+
+
+            <!-- header-area end -->
+
+            <!-- breadcrumb-area start -->
+            <div class="breadcrumb-area section-ptb">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2 class="breadcrumb-title">"Special Events Security: Ensuring Safety and Success with BaazSecurity Services” is the title of the article."</h2>
+                            <!-- breadcrumb-list start -->
+                            <ul class="breadcrumb-list">
+                                <li class="breadcrumb-item"><a style="color:white;" href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active">Service</li>
+                            </ul>
+                            <!-- breadcrumb-list end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- breadcrumb-area end -->
+            <div class="blogi">
+
+                <div class="card-container">
+
+                    <img src="/image/security2.jpg" alt="security image">
+
+                    <p>Numerous unique events, from festivals and concerts to business gatherings and high-profile galas, are held throughout the dynamic state of California. While these events give participants remarkable experiences, they also bring certain security difficulties that event planners must deal with. Professional security services are becoming necessary as event safety and security become more important. We will discuss the importance of special events security in this blog article, as well as how BaazSecurity Services acts as a reliable partner in guaranteeing the security and success of events across California.</p>
+
+                    <h2>Event Security: Its Importance:</h2>
+
+                    <p>Special occasions foster community interaction and produce enduring memories. However, if safety and security precautions are not properly put into place, an event’s success and enjoyment can be rapidly tarnished. It is crucial to be ready for any potential security risks or emergency scenarios because large gatherings might draw a variety of crowds. Event planners must put attendees’, employees’, and VIPs’ security first while also protecting the event site and its assets.
+                    </p>
+
+                    <p>Professional event security services are no longer a choice but a necessity in today’s environment when security hazards can vary from crowd-related mishaps to potential terrorist threats. To ensure thorough risk assessment, efficient crowd management, and successful emergency response plans, event planners must work with skilled security firms.</p>
+
+                    <h2>Special Events Security Expertise of BaazSecurity:</h2>
+
+                    <ol type="1">
+                        <li>In California, BaazSecurity Services has established a reputation as a trustworthy and knowledgeable special events security service. Their staff of devoted experts is experienced in resolving the special difficulties that develop throughout gatherings of various sizes and objectives. Taking a closer look at some of the essential elements of BaazSecurity’s specialised special events security services.</li>
+
+                        <li>A thorough risk assessment of the event venue and its environs is conducted by BaazSecurity as part of the security process. Through the identification of potential vulnerabilities, this research aids in the development of a customised security strategy.</li>
+
+                        <li>Monitoring: To provide real-time surveillance of crucial regions, high-definition
+                            surveillance cameras
+                            are strategically placed. These cameras serve as a deterrent to prospective threats and, if
+                            necessary,
+                            help with post-event analysis.</li>
+
+                        <li>Effective management of huge crowds is essential for event safety. Crowd control techniques used by BaazSecurity put safety and orderly flow ahead of any conflicts or events.</li>
+
+                        <li>High-profile events frequently draw dignitaries and celebrities who need individualised security. VIP protection services from BaazSecurity guarantee these people’s security and privacy while letting them take full advantage of the event without being bothered.</li>
+                        <li>BaazSecurity uses access control systems to manage entry points and make sure that only people with the proper credentials can access restricted areas. For the purpose of preventing unauthorised entrance from outside the event grounds, they also build strong perimeter security measures.</li>
+                        <li>Emergency Response Planning: BaazSecurity creates detailed emergency response plans that cover evacuation methods, medical emergency protocols, and communication techniques. Their readiness guarantees a prompt and coordinated response to unanticipated crises.</li>
+                    </ol>
+                    <h2>The Advantages of Special Events Security Services from BaazSecurity:</h2>
+                    <ol type="1">
+                        <li>A Secure Environment: By utilising BaazSecurity’s knowledgeable services, event planners may establish a secure setting that encourages a satisfying experience for all visitors. A safe environment promotes comfort and trust, which boosts involvement and enjoyment.</li>
+
+                        <li>Risk reduction: Proactive security measures assist reduce possible hazards, ensuring that the event goes off without a hitch. The attendees gain from this protection, and the event planners’ reputation is also protected.</li>
+
+                        <li>Security staff who are polite and professional: BaazSecurity employees are not only well-trained, but also skilled at offering warm and welcoming customer service. Their friendly demeanour enhances the event’s welcome and upbeat vibe.</li>
+                        <li>Event planners may be confident they are ready for any unforeseen circumstance with the help of BaazSecurity’s emergency response planning. Their well-coordinated response plans can aid in averting pandemonium and guaranteeing everyone’s safety.</li>
+                    </ol>
+                    <h2>Conclusion:</h2>
+                    <p>Keeping attendees safe and secure has risen to the top of the priority list for event planners in California’s booming special event industry. It is impossible to exaggerate the value of expert event security services. With its special events security expertise, BaazSecurity Services provides complete solutions that are specifically tailored to meet the demands of each event.</p>
+
+                    <p>BaazSecurity’s services ensure a safe and successful event experience, from rigorous risk assessments and crowd management to VIP protection and emergency response planning. Event planners can concentrate on organising memorable and entertaining gatherings that have a positive effect on guests and keep the highest standards of safety by delegating their event security needs to BaazSecurity.</p>
+
+                    <div class="form">
+                        <h3>Leave a Reply</h3>
+                        <p>Your email address will not be published. Required fields are marked *</p>
+                        <form action="">
+                            <textarea name="" id="textarea" placeholder="Enter Your Comments"></textarea>
+                            <br>
+                            <input type="text" placeholder="Your Name">
+                            <br>
+                            <input type="email" placeholder="Your Email">
+                            <br>
+                            <input type="text" placeholder="Enter website"><br>
+                            <button>
+                                Post Comment
+
+                            </button>
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <div class="blog-content">
+                    <h2>Recent Post</h2>
+                    <hr>
+                    <a href="">
+                        <p>> “Protecting The Future: BaazSecurity Services For Institutions & Others In California” Is
+                            The Title Of
+                            The Document."</p>
+                    </a>
+                    <a href="">
+                        <p>> “Special Events Security: Ensuring Safety And Success With BaazSecurity Services” Is The
+                            Title Of The
+                            Article."</p>
+                    </a>
+                    <a href="">
+                        <p>> “Securing Your Business: Commercial & Industrial Security Services By BaazSecurity In
+                            California”</p>
+                    </a>
+                    <a href="">
+                        <p>> "Residential Security Services In California, USA: Protecting Your Home And Loved Ones"</p>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <footer class="text-center text-lg-start text-white bg-dark pt--30" style="overflow: hidden;">
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3  mb-4 for-respo">
+                            <!-- Content -->
+                            <a class="footer-fo" href="#"><img src="image/logo1.png" alt=""></a>
+                            <p class="mt-4 newp">It is a long established fact that a reader will page when looking at
+                                its
+                                layout. all
+                                reader will page when looking .</p>
+                            <div class="icon">
+                                <ul class="social">
+                                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mb-4 newd">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4 newf">
+                                Services
+                            </h6>
+                            <p>
+                                <a href="index.html">Home</a>
+                            </p>
+                            <p> <a href="about.html">About</a>
+                            </p>
+                            <p>
+                                <a href="services.html">Service</a>
+                            </p>
+                            <p>
+                                <a href="contact.html">Contact Us</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mb-4 newd">
+
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4 newf">
+                                Important links
+                            </h6>
+                            <p>
+                                <a href="#">Privacy Policy</a>
+                            </p>
+                            <p>
+                                <a href="#!">Terms & Condition</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 newd mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase mb-4 fw-bold newf"> Quick Contact</h6>
+                            <p><a href="#"><i class="fas fa-phone me-3"></i>&nbsp;&nbsp;&nbsp;1(951)889-8700</a></p>
+                            <p><a href="#"><i
+                                        class="fa-solid fa-envelope me-3"></i>&nbsp;&nbsp;&nbsp;info@baazpatrol.com</a>
+                            </p>
+                            <p><a href="#"><i class="fa-solid fa-location-dot me-3"></i>&nbsp;&nbsp;&nbsp;6185
+                                    Magnolia Ave Suite 311 <span class="news">Riverside CA 92506</span>
+                                </a>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                <p>Baaz Patrol&copy; 2024 . All Rights Reserved</p>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+    </section>
+
+</body>
+
+</html>

@@ -34,10 +34,26 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <style>
+        /* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+        body,
+        body * {
+            font-family: "Rajdhani", sans-serif !important;
+        } */
+
+        
+        footer.text-center.text-lg-start.text-white.bg-dark.pt--30 {
+            background: #000 !important;
+        }
+
         * {
             box-sizing: border-box;
             margin: 0px;
             padding: 0px;
+        }
+
+        .no-js {
+            width: 100% !important;
         }
 
         .navbar-nav {
@@ -93,12 +109,11 @@
         .breadcrumb-area {
 
             background: url(/image/securyityimg.jpg);
-
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             text-align: center;
-            height: 342px;
+            height: 320px;
             width: 100%;
             opacity: 0.8;
 
@@ -106,7 +121,7 @@
         }
 
         .breadcrumb-area h2 {
-            margin-top: 51px;
+            /* margin-top: 51px; */
             color: white;
             font-weight: 600;
             font-size: 57px;
@@ -185,13 +200,61 @@
         }
 
         .service-content a {
-            color: black;
+            color: black !important;
+            font-family: sans-serif !important;
         }
 
         .breadcrumb-list .breadcrumb-item.active {
             color: #ffb814;
         }
 
+        @media screen and (max-width:320px) {
+            body {
+                width: 119% !important;
+            }
+
+            .container {
+                margin-left: -21px;
+            }
+
+            a {
+                color: white !important;
+            }
+
+        }
+
+        @media screen and (max-width:375px) {
+            .container {
+                margin-left: -15px;
+            }
+
+            a {
+                color: white !important;
+            }
+        }
+
+        @media screen and (min-width:375px)and (max-width:425px) {
+            .container {
+                margin-left: -17px !important;
+            }
+
+            a {
+                color: white !important;
+            }
+
+            .testimonial4_slide {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 80%;
+                margin: auto;
+                padding: 0px;
+                position: relative;
+                text-align: center;
+                margin-left: 55px;
+            }
+        }
 
         @media screen and (max-width:768px) {
 
@@ -209,9 +272,10 @@
             }
 
             .services h1 {
+                font-weight: bolder;
                 text-align: center;
                 margin-top: 8px;
-                font-size: 20px;
+                font-size: 23px;
             }
 
             .services p {
@@ -224,7 +288,7 @@
 
             .services {
                 height: 193px;
-                border: 2px solid #f9ff0d;
+                border: 2px solid #e1e155;
                 margin: 27px 12px 5px 24px;
                 border-radius: 77px;
             }
@@ -252,79 +316,671 @@
                 font-size: 47px;
             }
 
+            .testimonial4_slide p {
+                color: #ffffff;
+                font-size: 11px;
+                margin: 40px 0 20px 0;
+            }
+
         }
+
+
+
+
 
         /* =============================footer================== */
         a {
             text-decoration: none;
             color: #fff;
         }
+
+        /* ================================testomoial========================= */
+
+        .testimonial:after {
+            position: absolute;
+            top: -0 !important;
+            left: 0;
+            content: " ";
+            background: url();
+            background-size: 100% 100px;
+            width: 100%;
+            height: 100px;
+            float: left;
+            z-index: 99;
+        }
+
+        .testimonial {
+            min-height: 375px;
+            position: relative;
+            background: url(/image/smartphone.jpg);
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-position: center;
+            background-size: cover;
+        }
+
+        #testimonial4 .carousel-inner:hover {
+            cursor: -moz-grab;
+            cursor: -webkit-grab;
+        }
+
+        #testimonial4 .carousel-inner:active {
+            cursor: -moz-grabbing;
+            cursor: -webkit-grabbing;
+        }
+
+        #testimonial4 .carousel-inner .item {
+            overflow: hidden;
+        }
+
+        .testimonial4_indicators .carousel-indicators {
+            left: 0;
+            margin: 0;
+            width: 100%;
+            font-size: 0;
+            height: 20px;
+            bottom: 15px;
+            padding: 0 5px;
+            cursor: e-resize;
+            overflow-x: auto;
+            overflow-y: hidden;
+            position: absolute;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        .testimonial4_indicators .carousel-indicators li {
+            padding: 0;
+            width: 14px;
+            height: 14px;
+            border: none;
+            text-indent: 0;
+            margin: 2px 3px;
+            cursor: pointer;
+            display: inline-block;
+            background: #ffffff;
+            -webkit-border-radius: 100%;
+            border-radius: 100%;
+        }
+
+        .testimonial4_indicators .carousel-indicators .active {
+            padding: 0;
+            width: 14px;
+            height: 14px;
+            border: none;
+            margin: 2px 3px;
+            background-color: #9dd3af;
+            -webkit-border-radius: 100%;
+            border-radius: 100%;
+        }
+
+        .testimonial4_indicators .carousel-indicators::-webkit-scrollbar {
+            height: 3px;
+        }
+
+        .testimonial4_indicators .carousel-indicators::-webkit-scrollbar-thumb {
+            background: #d01818;
+            -webkit-border-radius: 0;
+            border-radius: 0;
+        }
+
+        .testimonial4_control_button .carousel-control {
+            top: 175px;
+            opacity: 1;
+            width: 40px;
+            bottom: auto;
+            height: 40px;
+            font-size: 10px;
+            cursor: pointer;
+            font-weight: 700;
+            overflow: hidden;
+            line-height: 38px;
+            text-shadow: none;
+            text-align: center;
+            position: absolute;
+            background: transparent;
+            border: 2px solid #ffffff;
+            text-transform: uppercase;
+            -webkit-border-radius: 100%;
+            border-radius: 100%;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            -webkit-transition: all 0.6s cubic-bezier(0.3, 1, 0, 1);
+            transition: all 0.6s cubic-bezier(0.3, 1, 0, 1);
+        }
+
+        .testimonial4_control_button .carousel-control.left {
+            left: 7%;
+            top: 50%;
+            right: auto;
+        }
+
+        .testimonial4_control_button .carousel-control.right {
+            right: 7%;
+            top: 50%;
+            left: auto;
+        }
+
+        .testimonial4_control_button .carousel-control.left:hover,
+        .testimonial4_control_button .carousel-control.right:hover {
+            color: #000;
+            background: #fff;
+            border: 2px solid #fff;
+        }
+
+        .testimonial4_header {
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 550px;
+            display: block;
+            margin: 30px auto;
+            text-align: center;
+            position: relative;
+        }
+
+        .testimonial4_header h4 {
+            color: #ffffff;
+            font-size: 30px;
+            font-weight: 600;
+            position: relative;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* margin-left: 55px */
+
+        .testimonial4_slide {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 70%;
+            margin: auto;
+            padding: 20px;
+            position: relative;
+            text-align: center;
+
+        }
+
+        .testimonial4_slide img {
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 136px;
+            height: 136px;
+            margin: auto;
+            display: block;
+            color: #f2f2f2;
+            font-size: 18px;
+            line-height: 46px;
+            text-align: center;
+            position: relative;
+            border-radius: 50%;
+            box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+            -moz-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+            -o-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+            -webkit-box-shadow: -6px 6px 6px rgba(0, 0, 0, 0.23);
+        }
+
+        .testimonial4_slide p {
+            color: #ffffff;
+            font-size: 20px;
+            line-height: 1.4;
+            margin: 40px 0 20px 0;
+        }
+
+        .testimonial4_slide h4 {
+            color: #ffffff;
+            font-size: 22px;
+        }
+
+        .testimonial .carousel {
+            padding-bottom: 50px;
+        }
+
+        .testimonial .carousel-control-next-icon,
+        .testimonial .carousel-control-prev-icon {
+            width: 35px;
+            height: 35px;
+        }
+
+        @media screen and (max-width:768px) {
+
+            .testimonial4_slide p {
+                color: #ffffff;
+                font-size: 13px;
+                margin: 40px 0 20px 0;
+            }
+
+            .testimonial4_slide p {
+                font-size: -55px;
+                color: #ffffff;
+                font-size: 11px;
+                /* line-height: 1.4; */
+                margin: 40px 0 20px 0;
+            }
+
+            .c.A {
+                color: white;
+                margin-left: 10px;
+                font-size: 16px;
+            }
+
+            .row {
+                margin-left: -4px;
+                --bs-gutter-x: 1.5rem;
+                --bs-gutter-y: 0;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .footer-area .row {
+                padding-left: 15px;
+            }
+
+        }
+
+        @media screen and (min-width:1440px) {
+            .nav-link {
+                width: 83px;
+            }
+
+        }
+    </style>
+
+    <style>
+        * {
+            font-style: normal;
+        }
+
+        p.baaz {
+            text-align: left;
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+
+        @media screen and (min-device-width: 300px) and (max-device-width: 768px) {
+            * {
+                font-family: sa;
+            }
+
+            .banner {
+                height: 15rem;
+
+
+            }
+
+            .police img {
+                width: auto;
+                height: 480px;
+                margin-top: 140px;
+                height: 12rem;
+            }
+
+            .car img {
+                height: 12rem;
+                width: auto;
+                margin-left: -420px;
+
+            }
+
+            .car img {
+                height: 200px;
+                width: 300px;
+                position: relative;
+                left: -160px;
+            }
+
+            .topimg {
+                height: 200px;
+            }
+
+            .section-title h2 {
+                font-size: 30px;
+                margin-top: 20px;
+            }
+
+            .h_01 {
+                font-size: 10px;
+            }
+
+            .section-title {
+                padding: 0;
+            }
+
+            .topimg {
+                margin-top: 49px !important;
+            }
+
+            .integraty {
+                margin-inline: -63px;
+                word-spacing: -5px;
+            }
+
+            .HoverHour {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .card {
+                width: 324px;
+                height: 221px;
+            }
+
+            .title h2 {
+                font-size: 16px;
+                margin-top: 10px;
+            }
+
+            .para>h4 {
+                line-height: 1.2;
+                font-size: 10px;
+                margin-bottom: 100px;
+            }
+
+            .topimg {
+                margin-bottom: 200px;
+                margin-top: 28px;
+            }
+
+            .WePara {
+                margin-left: -3px !important;
+            }
+
+            .WeParaM {
+                margin-top: -100px;
+            }
+
+            .our1 {
+                font-size: 20px;
+            }
+
+            .car img {
+                margin-left: -450px;
+            }
+
+            .image img {
+                max-width: 100%;
+                height: auto;
+                margin-top: 45%;
+            }
+
+            .section-title p {
+                align-items: justify;
+            }
+
+            .baaz {
+                text-align: justify;
+            }
+
+            .car img {
+                background-color: red;
+            }
+
+            .integraty {
+                margin-inline: -63px;
+                word-spacing: 1px;
+                text-align: left;
+            }
+
+        }
+
+
+        .navbar-nav {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            color: azure;
+
+        }
+
+        .list {
+            display: flex;
+            gap: 2%;
+            width: 47%;
+        }
+
+        .cont-info>a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .cont-info>a:hover {
+            color: #f4bd3e;
+
+        }
+
+        .nav-link:hover {
+            color: #f4bd3e;
+        }
+
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link.show {
+            color: #f4bd3e;
+        }
+
+        .logo {
+            margin-left: 6%;
+        }
+
+        .navbar-nav>.list>.nav-item>a:hover {
+            color: #f4bd3e !important;
+        }
+
+        .nav-link {
+            width: 99px !important;
+        }
+
+        .toggle {
+            background-color: antiquewhite;
+        }
+
+        .list1 {
+            margin: 1% -9% 0% 0%;
+            width: 429px !important;
+        }
+
+        @media screen and (max-width:768px) {
+
+            .list {
+                display: flex;
+                gap: 8%;
+                padding: 1%;
+                flex-direction: column;
+                width: 53%;
+            }
+
+            .navbar-nav>.list>.nav-item>a:hover {
+                color: #f4bd3e !important;
+            }
+
+
+
+            .topimg {
+                margin-left: 10% !important;
+                width: 649px !important;
+                height: auto !important;
+                margin-top: 150px !important;
+            }
+
+            .secure {
+                width: 100%;
+                position: absolute;
+                top: 300px;
+            }
+
+            .carr {
+                margin-left: 3% !important;
+            }
+
+            .unique {
+                margin-left: 0px !important;
+            }
+
+            .pr_count {
+                margin-bottom: -129px;
+            }
+
+            .repair-image.pt--30 img {
+                border-radius: 3px !important;
+                height: 244px !important;
+                width: 537px !important;
+                margin-right: 23px !important;
+                margin-top: -63px !important;
+                margin-bottom: 27px !important;
+            }
+        }
+
+        .banner {
+            height: 500px;
+            background: url(/image/ben-o-bro-wpU4veNGnHg-unsplash.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+
+        }
+
+        .police {
+            height: 100%;
+            width: auto;
+            overflow: hidden;
+        }
+
+        .topimg {
+            margin-left: 23%;
+            width: 649px !important;
+            height: auto !important;
+            margin-top: 28px;
+        }
+
+        .secure {
+            width: 100%;
+            position: absolute;
+            top: 300px;
+        }
+
+        .carr {
+            position: relative;
+            margin-left: 26%;
+            animation-name: move;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes move {
+            0% {
+                bottom: -300px;
+            }
+
+            50% {
+                bottom: 50%;
+            }
+
+            100% {
+                bottom: 0;
+            }
+        }
+
+
+        .newf {
+            font-size: 17px;
+        }
+
+        .newd>p {
+            font-size: 15px;
+        }
+
+        .newp {
+            font-size: 16px;
+            text-align: left;
+        }
+
+        .para {
+            font-weight: none;
+        }
+
+        @media screen and (min-device-width: 300px) and (max-device-width: 768px) {
+            .para>h4 {
+                font-weight: 300;
+                line-height: 1.2;
+                font-size: 13px;
+                margin-bottom: 57px;
+                margin-left: -48px;
+                margin-right: -58px;
+            }
+
+            .section-title p {
+                align-items: justify;
+                text-align: justify;
+                font-size: 16px;
+                word-spacing: -1px;
+            }
+        }
+
+        nav.navbar.navbar-expand-lg.bg-dark {
+            background: #000 !important;
+        }
     </style>
 
     <script src="https://kit.fontawesome.com/4cbca90a22.js" crossorigin="anonymous"></script>
-
-    <!-- Modernizer JS -->
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
-      </svg>
-     -->
 </head>
 
 <body>
-
     <!-- Main Wrapper Start -->
-    <div class="main-wrapper">
+    <!-- header-area start -->
 
-        <!-- header-area start -->
-
-        <nav class="navbar navbar-expand-lg bg-dark">
-            <div class="container-fluid">
-                <div class="logo ms-*(2) ">
-                    <a href="index.html"><img src="image/logo1.png" alt="" style="width: 150px;"></a>
-                </div>
-                <button class="toggle navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class=" navbar-toggler-icon" id="toggle-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <div class="list">
-                            <li class="nav-item">
-                                <a class="nav-link  text-white" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="about.html">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link  active" href="services.html">Service</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="contact.html">Contact</a>
-                            </li>
-                        </div>
-                        <div class="list list1">
-                            <div class="cont-info"> <i class="bi bi-telephone-fill"> </i> <a
-                                    href="tel:+1 (951) 889-8700 ">
-                                    <i class="fa-solid fa-phone"></i> 1
-                                    (951) 889-8700 </a>
-                            </div>
-
-                            <div class="cont-info">
-                                <i class="bi bi-envelope-fill"> </i><a href="mailto:example@email.com"><i
-                                        class="fa-solid fa-envelope"></i>
-                                    info@baazpatrol.com</a>
-                            </div>
-                        </div>
-
-
-                        </li>
-                </div>
-                </ul>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <div class="logo ms-*(2) ">
+                <a href="index.html"><img src="image/logo1.png" alt="" style="width: 150px;"></a>
             </div>
-        </nav>
-    </div>
-   
+            <button class="toggle navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <div class="list">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="services.html">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="contact.html">Contact</a>
+                        </li>
+                    </div>
+                    <div class="list list1" style="width: 371px;">
+                        <div class="cont-info"> <a href="tel:+1 (951) 889-8700 ">
+                                <i class="fa-solid fa-phone"></i> +1
+                                (951) 889-8700 </a>
+                        </div>
+
+                        <div class="cont-info">
+                            <a href="mailto:example@email.com"><i class="fa-solid fa-envelope"></i>
+                                info@baazpatrol.com</a>
+                        </div>
+                    </div>
+
+
+                    </li>
+            </div>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
 
 
     <!-- header-area end -->
@@ -337,7 +993,7 @@
                     <h2 class="breadcrumb-title">Service</h2>
                     <!-- breadcrumb-list start -->
                     <ul class="breadcrumb-list">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a style="color:white;" href="index.html">Home</a></li>
                         <li class="breadcrumb-item active">Service</li>
                     </ul>
                     <!-- breadcrumb-list end -->
@@ -369,9 +1025,9 @@
                             <img src="image/self security.jpg" alt="">
                         </div>
                         <div class="service-content text-center">
-                            <h3><a href="single-services.html">Private Security</a></h3>
+                            <h3><a href="PrivateSecuirity.html">Private Security</a></h3>
                             <p>Protecting assets, people, and information with dedicated, vigilant professionals.</p>
-                            <a href="single-services.html">READ MORE</a>
+                            <a href="PrivateSecuirity.html">READ MORE</a>
                         </div>
                     </div>
                     <!-- single-service End -->
@@ -383,9 +1039,9 @@
                             <img src="image/event Security.avif" alt="">
                         </div>
                         <div class="service-content text-center">
-                            <h3><a href="single-services.html">Event Security</a></h3>
+                            <h3><a href="eventSecuirity.html">Event Security</a></h3>
                             <p>Ensuring safety and order at events through vigilant, strategic security. </p>
-                            <a href="single-services.html" class="border-radius">READ MORE</a>
+                            <a href="eventSecuirity.html" class="border-radius">READ MORE</a>
                         </div>
                     </div>
                     <!-- single-service End -->
@@ -397,9 +1053,9 @@
                             <img src="image/officeSecurity1.jpg" alt="">
                         </div>
                         <div class="service-content text-center">
-                            <h3><a href="single-services.html">Office Security</a></h3>
+                            <h3><a href="officeSecuirity.html">Office Security</a></h3>
                             <p>Office security: Protecting premises and personal with strategic measures. </p>
-                            <a href="single-services.html">READ MORE</a>
+                            <a href="officeSecuirity.html">READ MORE</a>
                         </div>
                     </div>
                     <!-- single-service End -->
@@ -411,9 +1067,9 @@
                             <img src="image/personal security.jpg" alt="">
                         </div>
                         <div class="service-content text-center">
-                            <h3><a href="single-services.html">Personal Security</a></h3>
+                            <h3><a href="personalSecuirity.html">Personal Security</a></h3>
                             <p>Personal safety through awareness, preparedness, and protective measures.</p>
-                            <a href="single-services.html">READ MORE</a>
+                            <a href="personalSecuirity.html">READ MORE</a>
                         </div>
                     </div>
                     <!-- single-service End -->
@@ -425,9 +1081,9 @@
                             <img src="image/transportSecurity.jpg" alt="">
                         </div>
                         <div class="service-content text-center">
-                            <h3><a href="single-services.html">Transport Security</a></h3>
+                            <h3><a href="TransportSecuirty.html">Transport Security</a></h3>
                             <p>Ensuring safe and secure movement of people, goods, and vehicles.</p>
-                            <a href="single-services.html">READ MORE</a>
+                            <a href="TransportSecuirty.html">READ MORE</a>
                         </div>
                     </div>
                     <!-- single-service End -->
@@ -439,9 +1095,9 @@
                             <img src="image/home security.jpg" alt="">
                         </div>
                         <div class="service-content text-center">
-                            <h3><a href="single-services.html">Home Security</a></h3>
+                            <h3><a href="HomeSecuirty.html">Home Security</a></h3>
                             <p>Safeguarding residences with alarms, surveillance, and access control systems.</p>
-                            <a href="single-services.html">READ MORE</a>
+                            <a href="HomeSecuirty.html">READ MORE</a>
                         </div>
                     </div>
                     <!-- single-service End -->
@@ -450,90 +1106,154 @@
         </div>
     </div>
     <!-- content-wraper end -->
+    <!-- ====================================testomonial================================== -->
+
+    <section class="testimonial text-center">
+        <div class="container">
+
+            <div class="heading white-heading" style="color: white;">
+                <p>Testimonial</p>
+            </div>
+            <div id="testimonial4"
+                class="carousel slide testimonial4_indicators testimonial4_control_button thumb_scroll_x swipe_x"
+                data-ride="carousel" data-pause="hover" data-interval="5000" data-duration="2000">
+
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="testimonial4_slide">
+                            <img src="/image/testimonials-1-1.png" class="img-circle img-responsive" />
+                            <p>The team at Bazz Security is not just knowledgeable but also highly responsive and
+                                accommodating to our specific requirements. We highly recommend Bazz Security to any
+                                organization looking for top-notch security solutions. </p>
+                            <!-- <h4>Client 1</h4> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="/image/testimonials-1-2.png" class="img-circle img-responsive" />
+                            <p>Bazz Security has been an absolute game-changer for our organization. Their expertise and
+                                dedication to our security needs have truly surpassed our expectations. With their
+                                innovative solutions and proactive approach, we've been able to mitigate potential
+                                threats effectively. </p>
+                            <!-- <h4>Client 2</h4> -->
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial4_slide">
+                            <img src="/image/testimonials-1-3.png" class="img-circle img-responsive" />
+                            <p>Bazz Security has proven to be an invaluable asset to our organization. Their commitment
+                                to our security needs has been exemplary, providing innovative solutions that have
+                                greatly enhanced our defenses. Their team's expertise, responsiveness, and flexibility
+                                have made them a trusted partner in safeguarding our operations. </p>
+                            <!-- <h4>Client 3</h4> -->
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial4" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#testimonial4" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
 
 
     <!-- Footer Area Start -->
-    <footer class="footer-area">
-        <div class="footer-top pt--50 pb--100">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-info mt--60">
-                            <div class="logo">
-                                <a class="logo_fo" href="#"><img src="image/logo1.png" alt=""></a>
-                            </div>
-                            <p>It is a long established fact that a reader will page when looking at its layout. all
-                                reader will page when looking .</p>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white bg-dark pt--30">
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3  mb-4">
+                        <!-- Content -->
+                        <a class="footer-fo" href="#"><img src="image/logo1.png" alt=""></a>
+                        <p class="mt-4 newp">It is a long established fact that a reader will page when looking at its
+                            layout. all
+                            reader will page when looking .</p>
+                        <div class="icon">
                             <ul class="social">
-                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                                <li><a href="#"><i class="icofont-google-plus"></i></a></li>
-                                <li><a href="#"><i class="icofont-twitter"></i></a></li>
-                                <li><a href="#"><i class="icofont-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-info  mt--60">
-                            <div class="footer-title">
-                                <h3>SERVICES</h3>
-                            </div>
-                            <ul class="footer-list">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Our Services</a></li>
-                                <li><a href="#">Contact Us</a></li>
-                            </ul>
-                        </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mb-4 newd">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 newf">
+                            Services
+                        </h6>
+                        <p>
+                            <a href="index.html">Home</a>
+                        </p>
+                        <p> <a href="about.html">About</a>
+                        </p>
+                        <p>
+                            <a href="services.html">Service</a>
+                        </p>
+                        <p>
+                            <a href="contact.html">Contact Us</a>
+                        </p>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-info  mt--60">
-                            <div class="footer-title">
-                                <h3>Inportant Links</h3>
-                            </div>
-                            <ul class="footer-list">
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms & Condition</a></li>
-                                <!-- <li><a href="#">Our Services</a></li> -->
-                                <!-- <li><a href="#">Contact Us</a></li> -->
-                            </ul>
-                        </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mb-4 newd">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 newf">
+                            Important links
+                        </h6>
+                        <p>
+                            <a href="#">Privacy Policy</a>
+                        </p>
+                        <p>
+                            <a href="#!">Terms & Condition</a>
+                        </p>
                     </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="footer-info  mt--60">
-                            <div class="footer-title">
-                                <h3>QUICK CONTACT</h3>
-                            </div>
-                            <ul class="footer-list">
+                    <!-- Grid column -->
 
-
-
-
-                                <a href="#"> <i class="fa-solid fa-phone "></i> <span class="c A">+1 (951)
-                                        889-8700</span></a> <br>
-                                <a href="#"> <i class="fa-solid fa-envelope"></i> <span class="c A">
-                                        info@baazpatrol.com</span></a> <br>
-                                <a href="#"> <i class="fa-solid fa-location-dot"></i> <span class="c A">6185
-                                        Magnolia Ave Suite <span style="margin-left: 30px;">311 Riverside CA
-                                            92506</span> </span>
-                                </a>
-                            </ul>
-                        </div>
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 newd mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase mb-4 fw-bold newf">Quick Contact</h6>
+                        <p><a href="#"><i class="fas fa-phone me-3"></i>1(951)889-8700</a></p>
+                        <p><a href="#"><i class="fa-solid fa-envelope me-3"></i>info@baazpatrol.com</a>
+                        </p>
+                        <p><a href="#"><i class="fa-solid fa-location-dot me-3"></i>6185
+                                Magnolia Ave Suite 311 <span class="news">Riverside CA 92506</span>
+                            </a>
                     </div>
+                    <!-- Grid column -->
                 </div>
+                <!-- Grid row -->
             </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            <p>Baaz Patrol&copy; 2024 . All Rights Reserved</p>
         </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="footer-bottom-inner text-center">
-                            <p>Baaz Patrol&copy; 2024 . All Rights Reserved</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Copyright -->
     </footer>
+    <!-- Footer -->
     <!-- Footer Area End
 
 
@@ -561,6 +1281,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+
+
+
+    <!-- ================================testomonial=========================== -->
+
+
+
 
 </body>
 
