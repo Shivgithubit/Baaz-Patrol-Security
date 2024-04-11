@@ -4652,7 +4652,7 @@ button.default-btn.border-radius.abhibutton {
 
 .newd {
   margin-left: 70px;
-
+  text-align: left;
 }
 
 .newd p a:hover {
@@ -4730,4 +4730,12 @@ button.default-btn.border-radius.abhibutton {
 
 .main-section {
   overflow: hidden !important;
+}
+footer .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -7%;
 }
